@@ -1,0 +1,21 @@
+.navbaar {
+    text-align: center;
+};
+#enterCity {
+    border-color: black;
+};
+.city{
+    text-align: right;
+
+};
+.wind{text-align: right;
+
+};
+.humidity{
+    text-align: right;
+
+};
+.temperature{
+    text-align: right;
+
+};
