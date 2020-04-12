@@ -1,40 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+​
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>Weather Dashboard</title>
+  <meta charset="utf-8">
+  <title>Open Weather Homework</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel='stylesheet' type='text/css' href='./style.css'>
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="#!">Weather Dashboardt</a>
-      </nav>
-      <br />
-      <br />
-      <br />
-      <div class='col-md-3 mb-3'>
-        <h2>Search for a city</h2>
-        <div class="input-group md-form form-sm form-2 pl-0">
-            <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search" aria-label="Search">
-            <div class="input-group-append">
-                <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
-            </div>
+<div class='container'>
+    
+    <div class='row header-row'>
+        <div class='col-lg-12'>
+            <h1>Weather Dashboard</h1>
         </div>
     </div>
-      <br />
-      <br />
-      <div class="city">City Name</div>
-      <div class="wind">Wind Speed</div>
-      <div class="humidity">Humidity</div>
-      <div class="temp">Temp</div>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script src="./script.js"></script>
-
+​
+    <div class='row rowTwo'>
+        <div class='col-md-3 mb-3'>
+            <h2>Search for a city</h2>
+            <div class="input-group md-form form-sm form-2 pl-0">
+                <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <span class="input-group-text amber lighten-3" id="basic-text1"><i class="fas fa-search text-grey" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class='col-lg-9'>
+            <div class='row'>
+                <div class='card currentWeather'>
+                    <div class='card-body'>
+                        <div class='row'>
+                            <div class='city'></div>
+                            <div class='date'></div>
+                            <div class="icon"></div>
+                        </div>
+​
+                        <div class="wind"></div>
+                        <div class="humidity"></div>
+                        <div class="tempF"></div>
+                        <div class="uvIndex"></div>
+                        
+​
+                        <!-- <h3>City date icon</h3>
+                        <p>Temperature:</p>
+                        <p>Humidity:</p>
+                        <p>Wind Speed:</p>
+                        <p>UV Index:</p> -->
+                    </div>
+                </div>
+            </div>
+​
+            <div class='row'>
+                <h4>5-Day Forecast:</h4>
+            </div>
+​
+            <div class='row fiveDay'>
+                <div class='card dayOne'>
+                    <div class='card-body'>
+                        Date:<br>
+                        icon:<br>
+                        temperature:<br>
+                        humidity:<br>
+                    </div>
+                </div>
+                    
+                <div class='card dayTwo'>
+                    <div class='card-body'>
+                        Date:<br>
+                        icon:<br>
+                        temperature:<br>
+                        humidity:<br>
+                    </div>
+                </div>
+                
+                <div class='card dayThree'>
+                    <div class='card-body'>
+                        Date:<br>
+                        icon:<br>
+                        temperature:<br>
+                        humidity:<br>
+                    </div>
+                </div>
+​
+                <div class='card dayFour'>
+                    <div class='card-body'>
+                        Date:<br>
+                        icon:<br>
+                        temperature:<br>
+                        humidity:<br>
+                    </div>
+                </div>
+​
+                <div class='card dayFive'>
+                    <div class='card-body'>
+                        Date:<br>
+                        icon:<br>
+                        temperature:<br>
+                        humidity:<br>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+</div>
+​
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+​
+<script type="text/javascript" src='./script.js'></script>
+​
 </body>
-
+​
 </html>

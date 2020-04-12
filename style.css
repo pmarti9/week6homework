@@ -1,21 +1,33 @@
-.navbaar {
-    text-align: center;
+.header-row {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;    
 };
-#enterCity {
-    border-color: black;
+#searchHeader {
+    font-size: 25px;
+    margin-bottom: 20px;
 };
-.city{
-    text-align: right;
-
+#fiveDay {
+    display: inline; 
 };
-.wind{text-align: right;
-
+.currentWeather {
+    margin-top: 10px;
+    margin-right: 15px;
+    Width: 100%;
+    height: 50%;
 };
-.humidity{
-    text-align: right;
-
-};
-.temperature{
-    text-align: right;
-
+.dayOne {
+    margin-left: 20px;  
+  };
+.dayTwo {
+   margin-left: 20px;  
+ };
+.dayThree {
+    margin-left: 20px;  
+ };
+.dayFour {
+    margin-left: 20px;  
+ };
+.dayFive {
+  margin-left: 20px;  
 };
